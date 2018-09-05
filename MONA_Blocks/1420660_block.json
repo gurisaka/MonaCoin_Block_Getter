@@ -1,0 +1,72 @@
+[
+    {
+        "fees": -2500115672, 
+        "ts": "1535168917", 
+        "txid": "957083cc5466816c71545b4e9c5192b4a097d7339aefc08306cc25d6c526a73d", 
+        "block": 1420660, 
+        "in": [
+            {
+                "coinbase": "0374ad150495d1805b0826014adce5010000052f6d70682f"
+            }
+        ], 
+        "sent": 2500115672, 
+        "out": [
+            {
+                "value": 0
+            }, 
+            {
+                "addr": "MJpTHvn5TSgzr6mNsdEu28zMnQX232jr9q", 
+                "value": 2500115672, 
+                "spent": "02b0f13231253876906c7884a13de2dfc958eb0c8bdba928a12440e24f2e1b7b"
+            }
+        ]
+    }, 
+    {
+        "fees": 57836, 
+        "ts": "1535168917", 
+        "txid": "36c73b4c4c725dadb61da97170476598273c773c075dece9d5a51ff222c7f06d", 
+        "block": 1420660, 
+        "in": [
+            {
+                "tx": "fa24c06788744e7bcb9d5b560c684874f209c8b0bb42ed37fc7acf16cca8a14c", 
+                "value": 51799701, 
+                "addr": "MRdbvp6irUC2Gb5djGyBsePG2ucHHZeXRJ"
+            }
+        ], 
+        "sent": 51741865, 
+        "out": [
+            {
+                "value": 0
+            }, 
+            {
+                "addr": "MRdbvp6irUC2Gb5djGyBsePG2ucHHZeXRJ", 
+                "value": 51741865, 
+                "spent": "0ca7535a39400e07e7e27ec28b74b8a3c0bf4e1d5e7788d0b7c725ce970cb324"
+            }
+        ]
+    }, 
+    {
+        "fees": 57836, 
+        "ts": "1535168917", 
+        "txid": "0ca7535a39400e07e7e27ec28b74b8a3c0bf4e1d5e7788d0b7c725ce970cb324", 
+        "block": 1420660, 
+        "in": [
+            {
+                "tx": "36c73b4c4c725dadb61da97170476598273c773c075dece9d5a51ff222c7f06d", 
+                "value": 51741865, 
+                "addr": "MRdbvp6irUC2Gb5djGyBsePG2ucHHZeXRJ"
+            }
+        ], 
+        "sent": 51684029, 
+        "out": [
+            {
+                "value": 0
+            }, 
+            {
+                "addr": "MRdbvp6irUC2Gb5djGyBsePG2ucHHZeXRJ", 
+                "value": 51684029, 
+                "spent": "b14bcaf48e32a37a9791e22412a4d09db2bad82bb8ad8af844332a128d237df2"
+            }
+        ]
+    }
+]

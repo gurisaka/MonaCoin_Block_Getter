@@ -1,0 +1,74 @@
+[
+    {
+        "fees": -2500241700, 
+        "ts": "1535302514", 
+        "txid": "5970aa6821d3633e7478780b335af9665beae12f66a439f1b810cb016525eac6", 
+        "block": 1422070, 
+        "in": [
+            {
+                "coinbase": "03f6b2150472db825b08fabe6d6d3030303030303030303030303030303030303030303030303030303030303030010000000000000017ffffb6fb0100000d2f6e6f64655374726174756d2f"
+            }
+        ], 
+        "sent": 2500241700, 
+        "out": [
+            {
+                "value": 0
+            }, 
+            {
+                "addr": "MM7Szm9Ly74aAH9juAS8vsDvXmhB2wXpPo", 
+                "value": 2500241700, 
+                "spent": "0b85ed86fc9b6a8bf73bdb2312712620a95a3350d89aea2834e849628033c7a1"
+            }
+        ]
+    }, 
+    {
+        "fees": 120850, 
+        "ts": "1535302514", 
+        "txid": "fc6159dc84b6efac26b1528d501e1387cee1dd11a85e7ec387d15011b12089b3", 
+        "block": 1422070, 
+        "in": [
+            {
+                "tx": "5649babc080ad0ed5ef958e94e2dfbe6f9d295f3965d6b0ad6fcd734558d0029", 
+                "value": 68881618514, 
+                "addr": "MVPVmbbm7g3f9PF2xRV6RSoSnw8xfr8kNj"
+            }
+        ], 
+        "sent": 68881497664, 
+        "out": [
+            {
+                "addr": "MPYq1eJVWofz49Sthu161bpdzWKjRSjTWe", 
+                "value": 9980000000
+            }, 
+            {
+                "addr": "MVPVmbbm7g3f9PF2xRV6RSoSnw8xfr8kNj", 
+                "value": 58901497664, 
+                "spent": "85c971ea1ce521cd9d2e29f430bcf4b8366b9738e4a7b3f503bb26e7de110080"
+            }
+        ]
+    }, 
+    {
+        "fees": 120850, 
+        "ts": "1535302514", 
+        "txid": "c17654da9c9e50c6df5cb08e8521247d751243fd2147ddf60f4906a557383adb", 
+        "block": 1422070, 
+        "in": [
+            {
+                "tx": "035b87ba5938dc9d0b9587f63d323bbc8dcd928595a1f5d1fd596492e00990b9", 
+                "value": 69000000000, 
+                "addr": "MRuPcKtRw9nrh5vsbyGJaZm3wgRatoA77j"
+            }
+        ], 
+        "sent": 68999879150, 
+        "out": [
+            {
+                "addr": "MPYq1eJVWofz49Sthu161bpdzWKjRSjTWe", 
+                "value": 9980000000
+            }, 
+            {
+                "addr": "MVPVmbbm7g3f9PF2xRV6RSoSnw8xfr8kNj", 
+                "value": 59019879150, 
+                "spent": "f9491390bd28ef48fb4aeeb9b8ab763f03f6bfb527795a4ec8654a68817d128f"
+            }
+        ]
+    }
+]

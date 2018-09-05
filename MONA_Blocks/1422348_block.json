@@ -1,0 +1,96 @@
+[
+    {
+        "fees": -2500179682, 
+        "ts": "1535328288", 
+        "txid": "40cf98180e36e52e7d072e764a913e5ae60e7fc5ca6e3a51225ebae3406a23b4", 
+        "block": 1422348, 
+        "in": [
+            {
+                "coinbase": "030cb415042040835b08fabe6d6d000000000000000000007f6095887b780000000000005b110000000000000000010000000000000027ffff657b0200000d2f6e6f64655374726174756d2f"
+            }
+        ], 
+        "sent": 2500179682, 
+        "out": [
+            {
+                "value": 0
+            }, 
+            {
+                "addr": "MM7Szm9Ly74aAH9juAS8vsDvXmhB2wXpPo", 
+                "value": 2500179682, 
+                "spent": "a807b2b388a7354bcde51ac33ece534f08dfac1f3874db756b05a14bebd146ca"
+            }
+        ]
+    }, 
+    {
+        "fees": 59894, 
+        "ts": "1535328288", 
+        "txid": "b644bf4805ceaf42ff9a2b1f2363e5efb6b9506b47232c2b6d93d9d2f227206c", 
+        "block": 1422348, 
+        "in": [
+            {
+                "tx": "e139120e55ca372ed2083f904d65ae1ef613abf4362c63a14d66e9ec2c6ce2e6", 
+                "value": 4088737692, 
+                "addr": "MX2S3HpqFA5FM2rzLwNKcpojJh3iYGzEpz"
+            }
+        ], 
+        "sent": 4088677798, 
+        "out": [
+            {
+                "value": 0
+            }, 
+            {
+                "addr": "MX2S3HpqFA5FM2rzLwNKcpojJh3iYGzEpz", 
+                "value": 4088677798, 
+                "spent": "bf59c94bcc93412a08414fcdd3f88247269d0ad34e25ee04d435480beea8aa15"
+            }
+        ]
+    }, 
+    {
+        "fees": 59894, 
+        "ts": "1535328288", 
+        "txid": "bf59c94bcc93412a08414fcdd3f88247269d0ad34e25ee04d435480beea8aa15", 
+        "block": 1422348, 
+        "in": [
+            {
+                "tx": "b644bf4805ceaf42ff9a2b1f2363e5efb6b9506b47232c2b6d93d9d2f227206c", 
+                "value": 4088677798, 
+                "addr": "MX2S3HpqFA5FM2rzLwNKcpojJh3iYGzEpz"
+            }
+        ], 
+        "sent": 4088617904, 
+        "out": [
+            {
+                "value": 0
+            }, 
+            {
+                "addr": "MX2S3HpqFA5FM2rzLwNKcpojJh3iYGzEpz", 
+                "value": 4088617904, 
+                "spent": "d820bf3b5989f15f155a5e2150683aab36f1632989fa6437c8e33350eb0de616"
+            }
+        ]
+    }, 
+    {
+        "fees": 59894, 
+        "ts": "1535328288", 
+        "txid": "d820bf3b5989f15f155a5e2150683aab36f1632989fa6437c8e33350eb0de616", 
+        "block": 1422348, 
+        "in": [
+            {
+                "tx": "bf59c94bcc93412a08414fcdd3f88247269d0ad34e25ee04d435480beea8aa15", 
+                "value": 4088617904, 
+                "addr": "MX2S3HpqFA5FM2rzLwNKcpojJh3iYGzEpz"
+            }
+        ], 
+        "sent": 4088558010, 
+        "out": [
+            {
+                "value": 0
+            }, 
+            {
+                "addr": "MX2S3HpqFA5FM2rzLwNKcpojJh3iYGzEpz", 
+                "value": 4088558010, 
+                "spent": "025dcad17e20fec2424157daf3822f72831de8e76ba8d32fd42477e0103dc02b"
+            }
+        ]
+    }
+]

@@ -1,0 +1,72 @@
+[
+    {
+        "fees": -2500115096, 
+        "ts": "1534914172", 
+        "txid": "4d74a01275bae312f3b36c0c309d1c955b72a44a84bb5d5160ea09c4f3f43fa1", 
+        "block": 1417972, 
+        "in": [
+            {
+                "coinbase": "03f4a215047cee7c5b08d80521f8080000000d2f7374726174756d506f6f6c2f"
+            }
+        ], 
+        "sent": 2500115096, 
+        "out": [
+            {
+                "addr": "MG2m1jxj22suBNAWocawtdSKGCiFEqTTK1", 
+                "value": 2500115096, 
+                "spent": "a08d9d2bb32e8cac8e463fac3fec7f8188767f0cc946156e579209ce2b2280a7"
+            }, 
+            {
+                "value": 0
+            }
+        ]
+    }, 
+    {
+        "fees": 57548, 
+        "ts": "1534914172", 
+        "txid": "b1376030a3fcf92290f7227a5dc376924284c1b7a4d3ac16e3cb597401629608", 
+        "block": 1417972, 
+        "in": [
+            {
+                "tx": "ecf5b7317965b81b4795dc710d23bb83b24ee0e182f5bd27b5599685b0d394e2", 
+                "value": 2132258250, 
+                "addr": "MBggVLY7AY82rt8zaCsPFBmgh9XifHpqKo"
+            }
+        ], 
+        "sent": 2132200702, 
+        "out": [
+            {
+                "value": 0
+            }, 
+            {
+                "addr": "MBggVLY7AY82rt8zaCsPFBmgh9XifHpqKo", 
+                "value": 2132200702, 
+                "spent": "5e11ff199540ce43c2c30dc58f47e9c93f85772878bf9e9bff557ab94a00b8da"
+            }
+        ]
+    }, 
+    {
+        "fees": 57548, 
+        "ts": "1534914172", 
+        "txid": "862ce6ea5698a3651608396f2dcfe3df6e2982ab603c2ac5a49c1f73c5e14c98", 
+        "block": 1417972, 
+        "in": [
+            {
+                "tx": "08027ea0a34ae7b16ca36d71155866808894f80eb11d59eb4f6ebd5905b787f2", 
+                "value": 2612179490, 
+                "addr": "MBggVLY7AY82rt8zaCsPFBmgh9XifHpqKo"
+            }
+        ], 
+        "sent": 2612121942, 
+        "out": [
+            {
+                "value": 0
+            }, 
+            {
+                "addr": "MBggVLY7AY82rt8zaCsPFBmgh9XifHpqKo", 
+                "value": 2612121942, 
+                "spent": "27e3dd66947cdf07b52d22e0168dabc918560aa461a6d4f6b070caf54a0952d9"
+            }
+        ]
+    }
+]

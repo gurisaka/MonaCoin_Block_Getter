@@ -1,0 +1,49 @@
+[
+    {
+        "fees": -2500461401, 
+        "ts": "1535379452", 
+        "txid": "2492dd96976e3ed0bcc4a5582d71c5af824b57c5ae14498cf6c39d565f0faf30", 
+        "block": 1422889, 
+        "in": [
+            {
+                "coinbase": "0329b61504fc07845b084003923300000000052f79736c2f"
+            }
+        ], 
+        "sent": 2500461401, 
+        "out": [
+            {
+                "value": 0
+            }, 
+            {
+                "addr": "MErsX8aEJmaDiLNCS79Ag8hVbMWuGRjee8", 
+                "value": 2500461401
+            }
+        ]
+    }, 
+    {
+        "fees": 461401, 
+        "ts": "1535379452", 
+        "txid": "d142fc3e8d51c284cfe53c8941a7bc57243aae995443634f9a93ffe5e85794bf", 
+        "block": 1422889, 
+        "in": [
+            {
+                "tx": "6c7008d1982f8797768f523af2ffa1e48cad08d8fc39892abac235d80349e9bd", 
+                "value": 916226665, 
+                "addr": "M9HnzzPLFRp2C1tJmiCDa1tbMMWALx9qMG"
+            }
+        ], 
+        "sent": 915765264, 
+        "out": [
+            {
+                "addr": "MAmPwgEPudqKK54kpTtcFEEXpZ4qrRbtKJ", 
+                "value": 712799869, 
+                "spent": "c3f24bad2d0e77ffddba37dd3b255b462678d0f3e491c76e373fb61def8f424d"
+            }, 
+            {
+                "addr": "MLGg2d2mtzk8cck6R5qS3bCXae8MTwRauE", 
+                "value": 202965395, 
+                "spent": "e2e67c46502055512f25a9cacefb7dfb644b03d10e2361fb010d6c3668eaa31c"
+            }
+        ]
+    }
+]

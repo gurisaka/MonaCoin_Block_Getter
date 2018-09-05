@@ -1,0 +1,47 @@
+[
+    {
+        "fees": -2500060306, 
+        "ts": "1535345423", 
+        "txid": "e3fdf2d295abfa866a2caf1195487dc36018cdccddc0168a635a48184861f59b", 
+        "block": 1422526, 
+        "in": [
+            {
+                "coinbase": "03beb415040f83835b084401743001000000052f6d70682f"
+            }
+        ], 
+        "sent": 2500060306, 
+        "out": [
+            {
+                "value": 0
+            }, 
+            {
+                "addr": "MJpTHvn5TSgzr6mNsdEu28zMnQX232jr9q", 
+                "value": 2500060306, 
+                "spent": "1bec99299cff6660585c6447cd0a65f8c43f938fb9e5fcd27fb15f915d52ee99"
+            }
+        ]
+    }, 
+    {
+        "fees": 60306, 
+        "ts": "1535345423", 
+        "txid": "9a9b933c455c54a8baad02755bab54d93bb96ac7e475500c792563c789b0a655", 
+        "block": 1422526, 
+        "in": [
+            {
+                "tx": "62351d23e9b7d07b7fa8376eb50f69e81111c1886f5d6b45894c72aa327bfb59", 
+                "value": 95010304, 
+                "addr": "MLjohaJ1LyuAec6QufDfNsYRdF6hxbWr6F"
+            }
+        ], 
+        "sent": 94949998, 
+        "out": [
+            {
+                "value": 0
+            }, 
+            {
+                "addr": "MLjohaJ1LyuAec6QufDfNsYRdF6hxbWr6F", 
+                "value": 94949998
+            }
+        ]
+    }
+]

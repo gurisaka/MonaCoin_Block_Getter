@@ -1,0 +1,49 @@
+[
+    {
+        "fees": -2500045000, 
+        "ts": "1535168880", 
+        "txid": "66ed5a71a2680d387ef16538c53db1044fa1a3d89e64d78e7cdddac846d4b0eb", 
+        "block": 1420659, 
+        "in": [
+            {
+                "coinbase": "0373ad150470d1805b084401631f01000000052f6d70682f"
+            }
+        ], 
+        "sent": 2500045000, 
+        "out": [
+            {
+                "value": 0
+            }, 
+            {
+                "addr": "MJpTHvn5TSgzr6mNsdEu28zMnQX232jr9q", 
+                "value": 2500045000, 
+                "spent": "a996c714a281822c774934339b9d4367277d4f8d86e89c17389441570bae9e7f"
+            }
+        ]
+    }, 
+    {
+        "fees": 45000, 
+        "ts": "1535168880", 
+        "txid": "0623c471b8160b160e6e8d8c0481d1dafc8f6f5887bf50ec0865beecfa7a78b0", 
+        "block": 1420659, 
+        "in": [
+            {
+                "tx": "3e83418f136178d00a02b938e81dccdd6c3c91fd8051776bd6363dbbd01615e0", 
+                "value": 10000000000, 
+                "addr": "MB1DcwcgC5Ka2DfovzQ7a1heQmDDSR9875"
+            }
+        ], 
+        "sent": 9999955000, 
+        "out": [
+            {
+                "addr": "MPUAToXQC1NiLFV4xaShSupsZUGYF1an8N", 
+                "value": 285222080, 
+                "spent": "cbf665f2f693a1f90edce09ff6aad235d08a65a0459f236d56c85b629e4a3fc8"
+            }, 
+            {
+                "addr": "MRFZWzkTd8Cc3rwEatMTwDPPuk5yJyJHg2", 
+                "value": 9714732920
+            }
+        ]
+    }
+]
