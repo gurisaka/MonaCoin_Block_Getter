@@ -12,5 +12,8 @@ start_block_heightで何ブロックから取得を始めるか設定する。di
 ### Requirements
  * requests
 
+### Warning
+MONA_Blocksには既に1410501〜1430308ブロックが保存されています。
+
 ### Author
 #####  https://twitter.com/GuriTech.com
