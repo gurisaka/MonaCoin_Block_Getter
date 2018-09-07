@@ -6,27 +6,45 @@ import glob
 from pprint import pprint
 import time
 
+# Get Block Info
+def get_max_height():
+	response = requests.get('https://mona.chainsight.info/api/status?q=getInfo')
+	if response.status_code != 200:
+		return -1
+
+	else:
+		json_data = json.loads(response.text)
+		return int(json_data['info']['blocks'])
+
 def fetch_block_file(block_number):
-	pattern = "\[{'txid.*}\]\;"
 	try:
+		pattern = "\[{'txid.*}\]\;"
+
 		response = requests.get('https://bchain.info/MONA/block/' + str(block_number))
-		print(response.status_code)
+		if response.status_code != 200:
+			return False
+
 		matched_data = re.search(pattern, response.text)
 		transactions_json = json.loads(matched_data.group().replace('\'','"')[:-1])
 
 		if len(transactions_json) >= 20:
-			fetch_large_block_file(block_number)
+			return fetch_large_block_file(block_number)
 
 		else:
 			with open(os.path.dirname(os.path.abspath(__file__)) + '/MONA_Blocks/' + str(block_number) + '_block.json','w') as file:
 				json.dump(transactions_json,file,indent=4)
+			return True
 
 	except Exception as e :
-		pprint(e)
+		sys.stderr.write(e.args[0])
+		return False
 
 def fetch_large_block_file(block_number):
 	try:
 		response = requests.get('https://mona.chainsight.info/api/block-index/' + str(block_number))
+		if response.status_code != 200:
+			return False
+
 		block_hash = json.loads(response.text)['blockHash']
 
 		response = requests.get('https://mona.chainsight.info/api/block/' + block_hash)
@@ -38,6 +56,9 @@ def fetch_large_block_file(block_number):
 
 		for txid in txids:
 			response = requests.get('https://mona.chainsight.info/api/tx/' + txid)
+			if response.status_code != 200:
+				return False
+
 			time.sleep(0.3)
 			transaction = json.loads(response.text)
 			ts = int(transaction['time'])
@@ -77,25 +98,26 @@ def fetch_large_block_file(block_number):
 		file = open(os.path.dirname(os.path.abspath(__file__)) + '/MONA_Blocks/' + str(block_number) + '_block.json','w')
 		json.dump(file_data,file,indent=4)
 		file.close()
-		print('Completed ' + str(block_number) + ' !')
+		return True
 
 	except Exception as e:
-		pprint(e)
+		sys.stderr.write(e.args[0])
+		return False
 
-def check_lack_blocks():
+# Get Local Info
+def check_lack_blocks(wanted_block_numbers):
 	file_paths = glob.glob(os.path.dirname(os.path.abspath(__file__)) + '/MONA_Blocks/*.json')
-	block_numbers = [int(os.path.basename(os.path.abspath(file_path)).split('_')[0]) for file_path in file_paths]
-	min_block_number = min(block_numbers)
-	max_block_number = max(block_numbers)
+	exist_block_numbers = [int(os.path.basename(os.path.abspath(file_path)).split('_')[0]) for file_path in file_paths]
 
 	lack_block_numbers = []
 
-	for n in range(min_block_number,max_block_number):
-		if n not in block_numbers:
-			lack_block_numbers.append(n)
+	for wanted_block_number in wanted_block_numbers:
+		if wanted_block_number not in exist_block_numbers:
+			lack_block_numbers.append(wanted_block_number)
 
 	return lack_block_numbers
 
+# Make File
 def merge_blocks_file(output_file_path):
 	file_paths = glob.glob(os.path.dirname(os.path.abspath(__file__)) + '/MONA_Blocks/*.json')
 
@@ -130,4 +152,3 @@ def make_transactions_file(input_file_path,output_file_path):
 	file = open(output_file_path,'w')
 	json.dump(transactions,file,indent=4)
 	file.close()
-
