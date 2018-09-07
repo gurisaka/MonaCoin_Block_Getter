@@ -40,10 +40,17 @@ if __name__ == '__main__':
 	tail_block_height = int(sys.argv[1])
 	head_block_height = 0
 
+	if len(sys.argv) == 1:
+		merge_blocks_file(os.path.dirname(os.path.abspath(__file__)) + '/Outputs/MONA_Blocks.json')
+		make_transactions_file(os.path.dirname(os.path.abspath(__file__)) + '/Outputs/MONA_Blocks.json', os.path.dirname(os.path.abspath(__file__)) + '/Outputs/MONA_Transactions.json')
+
+		sys.exit(0)
+
 	if len(sys.argv) == 3:
 		# head to tail
 		head_block_height = int(sys.argv[2])
 		get_head_to_tail_blocks(tail_block_height, head_block_height, 0.3)
+		sys.exit(0)
 
 	else:
 		# highest to tail
@@ -54,3 +61,5 @@ if __name__ == '__main__':
 				head_block_height = tail_block_height
 			get_head_to_tail_blocks(tail_block_height, head_block_height, 0.3)
 			time.sleep(10)
+
+		sys.exit(-1)
