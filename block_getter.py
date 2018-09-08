@@ -59,7 +59,7 @@ def fetch_large_block_file(block_number):
 			if response.status_code != 200:
 				return False
 
-			time.sleep(0.3)
+			time.sleep(1)
 			transaction = json.loads(response.text)
 			ts = int(transaction['time'])
 			block = block_number

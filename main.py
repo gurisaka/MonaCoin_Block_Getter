@@ -49,7 +49,7 @@ if __name__ == '__main__':
 	if len(sys.argv) == 3:
 		# head to tail
 		head_block_height = int(sys.argv[2])
-		get_head_to_tail_blocks(tail_block_height, head_block_height, 0.3)
+		get_head_to_tail_blocks(tail_block_height, head_block_height, 1)
 		sys.exit(0)
 
 	else:
@@ -59,7 +59,7 @@ if __name__ == '__main__':
 
 			if head_block_height == -1:
 				head_block_height = tail_block_height
-			get_head_to_tail_blocks(tail_block_height, head_block_height, 0.3)
+			get_head_to_tail_blocks(tail_block_height, head_block_height, 1)
 			time.sleep(10)
 
 		sys.exit(-1)
